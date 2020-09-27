@@ -1,0 +1,218 @@
+html { scroll-behavior: smooth; }
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('media/header.jpeg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__inner {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header__title {
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px;
+    float: left;
+    margin: 0 10px;
+}
+
+.header__subtitle { color: #fff; }
+
+.header__subtitle::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.header__link {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.header__link:hover {
+    color: #112;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.header__text_rotate {
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: left;
+    overflow: hidden;
+    height: 60px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.header__text_rotate span {
+    display: block;
+}
+
+.header__text_rotate span:first-child {
+    animation: headertextchange 8s infinite;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 2em auto;
+    padding: 0 10px;
+}
+
+.aboutimage {
+    border-radius: 360px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.row {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.col-md {
+    text-align: center;
+}
+
+.about__title {
+    margin-top: 5px;
+}
+
+.card-deck {
+    margin: 2em 0;
+}
+
+.card {
+    max-width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardbig {
+    margin-bottom: 2em;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card h6 {
+    color: #95a5a6;
+    text-align: center;
+    font-weight: 200;
+}
+
+.price {
+    color: #2ecc71;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.oldprice {
+    color: #95a5a6;
+    text-decoration: line-through;
+    margin-right: 10px;
+    margin-left: -30px;
+}
+
+.card p {
+    text-align: center;
+}
+
+i {
+    float: left;
+    margin-right: 10px;
+}
+
+.list-group {
+    margin: 20px 0;
+}
+
+.textheader {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.features {
+    white-space: pre-line;
+}
+
+.separator {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.separator span {
+    position: relative;
+    display: inline-block;
+}
+
+.separator span:before,
+.separator span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 349px;
+    height: 2px;
+    background: #e5e5e5;
+}
+
+.separator span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.separator span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+@keyframes headertextchange {
+    14.2% {
+        margin-top: -60px;
+    }
+    28.4% {
+        margin-top: -120px;
+    }
+    42.6% {
+        margin-top: -180px;
+    }
+    56.8% {
+        margin-top: -120px;
+    }
+    71% {
+        margin-top: -60px;
+    }
+    85.2% {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .header__title {
+        float: none;
+        text-align: left;
+    }
+}
