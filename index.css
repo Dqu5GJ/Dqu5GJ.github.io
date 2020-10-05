@@ -111,7 +111,7 @@ header {
     margin-bottom: 2em;
 }
 
-.card h3 {
+.card .h3, .card h3 {
     text-align: center;
 }
 
